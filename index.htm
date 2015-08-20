@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Mouse Wars 1.2</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="style.css" type="text/css" />
+	</head>
+	<body>
+
+		<main>
+			<div class="click-area player1" data-player="1">
+				<div class="player-info">
+					<div class="points"></div>
+					<div class="name"></div>
+				</div>
+			</div>
+			<div class="middle">
+
+				<h1>Mouse Wars 1.2</h1>
+
+				<div>
+					<div id="statusText">Click inside start circle<br>to start the countdown</div>
+					<div id="startCircle"></div>
+				</div>
+
+				<div class="fullscreen-info">
+					fullscreen: ⌘-Shift-F (osx) / F11 (win)
+				</div>
+
+			</div>
+			<div class="click-area player2" data-player="2">
+				<div class="player-info">
+					<div class="points"></div>
+					<div class="name"></div>
+				</div>
+			</div>
+
+			<canvas id="replayCanvas"></canvas>
+		</main>
+
+		<script src="State.js"></script>
+		<script src="state_countdown.js"></script>
+		<script src="state_false_start.js"></script>
+		<script src="main.js"></script>
+	</body>
+</html>

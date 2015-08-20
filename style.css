@@ -1,0 +1,94 @@
+html, body, main {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-family: sans-serif;
+}
+
+
+main {
+	display: flex;
+	flex-direction: row;
+}
+
+
+.middle {
+	flex: 1;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.click-area {
+	flex: 0 0 100px;
+	background-color: #f3f3f3;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.click-area.player1 {
+	background-color: hsl(0, 40%, 90%);
+}
+.click-area.player2 {
+	background-color: hsl(222, 40%, 90%);
+}
+
+.player-info {
+	padding: 1rem;
+	background-color: #ddd;
+	color: white;
+}
+.player-info .name {
+	font-size: 1.2rem;
+}
+.player-info .points {
+	font-size: 2rem;
+}
+.player1 .player-info {
+	background-color: hsl(0, 50%, 60%);
+}
+.player2 .player-info {
+	background-color: hsl(222, 50%, 60%);
+}
+
+
+.fullscreen-info {
+	font-size: 1.7rem;
+	color: #999;
+	padding: 1rem;
+}
+
+
+#statusText {
+	font-size: 2rem;
+	margin: 1rem;
+	height: 5rem;
+}
+
+#statusText small {
+	font-size: 1.2rem;
+}
+
+
+#startCircle {
+	margin: 2rem auto;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 2px solid #444;
+}
+
+
+
+#replayCanvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+}
